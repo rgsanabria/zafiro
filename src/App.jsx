@@ -1,17 +1,17 @@
 import './App.css'
-
-import itemlistcontainer from './components/itemlistcontainer';
-import second from './components/navbar'
+import NavBar from './components/NavBar/NavBar';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
 function App() {
   return (
-    <>
-     <navbar/>
-     <itemlistcontainer />
-    </>
+    <div className="App">
+      <NavBar />
+      <ItemListContainer greeting={'Bienvenidos a Kü'} />
 
+    </div>
+    
   );
-
 }
+
 
 export default App;
